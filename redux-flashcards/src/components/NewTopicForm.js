@@ -20,9 +20,9 @@ export default function NewTopicForm() {
       return;
     }
     
-    let object = { id: newId, name: name, icon: icon, quizIds: [] };
+    let topicObject = { id: newId, name: name, icon: icon, quizIds: [] };
 
-    dispatch(addTopic(object));
+    dispatch(addTopic(topicObject));
 
     history.push(ROUTES.topicsRoute());
   };
